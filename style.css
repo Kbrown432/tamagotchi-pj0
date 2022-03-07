@@ -6,16 +6,16 @@ body {
 h1 {
     color: white;
     font-family: 'Righteous', cursive;;
-    margin-left: 300px;
+    margin-left: 500px;
 }
 
 .action {
-    margin-left: 200px;
-    margin-top: 250px;
+    margin-left: 600px;
+    margin-top: 50px;
 }
 
 .first {
-    margin-left: 400px;
+    margin-left: 600px;
 }
 
 .king { 
@@ -30,6 +30,7 @@ h1 {
 .eat {
     color: red;
     background-color: orange;
+    margin-right: 25px;
 }
 
 .fun {
@@ -40,12 +41,35 @@ h1 {
 .sleep {
     color: red;
     background-color: orange;
+    margin-left: 25px;
+}
+
+.bottle {
+    margin-left: 585px;
+    margin-top: 96px;
 }
 
 .oval {
-    height: 50px;
-    width: 100px;
+    height: 300px;
+    width: 225px;
     background-color: white;
     border-radius: 50%;
-    
 }
+
+.simba {
+    height: 300px;
+    width: 225px;
+    border-radius: 50%;
+}
+
+p {
+    font-family: 'Teko', sans-serif;
+    font-size: 30px;
+    color:yellow;
+}
+
+.stats {
+    float: left;
+    margin: auto;
+}
+

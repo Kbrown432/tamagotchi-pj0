@@ -28,34 +28,34 @@
 // console.log(rest);
 
 
-let num = 0;
-// function primeSecond() {
-//   food.getElementById('second').innerHTML = num;
-// }
-// function primeThird() {
-//   document.getElementById('third').innerHTML = num;
-// }
-// function primeFourth() {
-//   document.getElementById('fourth').innerHTML = num;
-// }
+// let num = 0;
+// // function primeSecond() {
+// //   food.getElementById('second').innerHTML = num;
+// // }
+// // function primeThird() {
+// //   document.getElementById('third').innerHTML = num;
+// // }
+// // function primeFourth() {
+// //   document.getElementById('fourth').innerHTML = num;
+// // }
 
-// Create a setInterval function to allow the value in hunger, sleepiness & boredom to count up to 10
- // document.getElementById('second').innerHTML = num;
-//   if (num <= 10) {
-  //   } else {
-  setInterval(function() {
+// // Create a setInterval function to allow the value in hunger, sleepiness & boredom to count up to 10
+//  // document.getElementById('second').innerHTML = num;
+// //   if (num <= 10) {
+//   //   } else {
+//   setInterval(function() {
  
-     num++;
+//      num++;
 
-     console.log(num);
-   }, 1000);
+//      console.log(num);
+//    }, 1000);
 
-let intervalFunc = setInterval(function() {
-  num++;
-  console.log(num);
-}, 1000);  
+// let intervalFunc = setInterval(function() {
+//   num++;
+//   console.log(num);
+// }, 1000);  
 
-clearInterval(intervalFunc);
+// clearInterval(intervalFunc);
 //  }
 //  lifeVal();
 
@@ -65,8 +65,57 @@ clearInterval(intervalFunc);
 //     king.addEventListener("click", primePlay());
 // }
 
+// below this comment is new code for my button functioning
+
+const startGame = document.querySelector(".king");
+const feedPet = document.querySelector(".eat");
+const playPet = document.querySelector(".fun");
+const restPet = document.querySelector(".sleep");
+// console.log(rest);
+let num = 0;
+let numCount = null;
+function primeFirst() {
+  console.log("start button clicked");
+  num++;
+}
+function primeSecond() {
+  console.log("feed button clicked");
+}
+function primeThird() {
+  console.log("play button clicked");
+}
+function primeFourth() {
+  console.log("rest button clicked");
+}
+// Create a setInterval function that counts up to 10
+numCount = setInterval(function() {
+})
+// function nowWorking(){
+//     king.addEventListener("click", primePlay());
+// }
 //create setTimeIntervals for stats
-// create a click operator for king, food, play & rest buttons
+// create EventListeners for king, food, play & rest buttons
+startGame.addEventListener("click", primeFirst);
+feedPet.addEventListener("click", primeSecond);
+playPet.addEventListener("click", primeThird);
+restPet.addEventListener("click", primeFourth);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

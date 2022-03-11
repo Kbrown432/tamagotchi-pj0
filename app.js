@@ -4,7 +4,9 @@
 // const play = document.getElementsByClassName('.fun');
 // const rest = document.getElementsByClassName('.sleep');
 
-// console.log(rest);
+
+
+
 // create EventListeners for king, food, play & rest buttons
 
 // function primePlay() {
@@ -18,40 +20,46 @@
 // }
 
 
-//create setTimeIntervals for stats
 
 // let num = null;
 
 
-const king = document.getElementsByClassName('.king');
-const food = document.getElementsByClassName('.action');
-const play = document.getElementsByClassName('.fun');
-const rest = document.getElementsByClassName('.sleep');
+
 // console.log(rest);
 
-// create EventListeners for king, food, play & rest buttons
+
 let num = 0;
-function primeSecond() {
-  food.getElementById('second').innerHTML = num;
-}
-function primeThird() {
-  document.getElementById('third').innerHTML = num;
-}
-function primeFourth() {
-  document.getElementById('fourth').innerHTML = num;
-}
+// function primeSecond() {
+//   food.getElementById('second').innerHTML = num;
+// }
+// function primeThird() {
+//   document.getElementById('third').innerHTML = num;
+// }
+// function primeFourth() {
+//   document.getElementById('fourth').innerHTML = num;
+// }
 
 // Create a setInterval function to allow the value in hunger, sleepiness & boredom to count up to 10
-const lifeVal = () => {
-  // document.getElementById('second').innerHTML = num;
-  if (num <= 10) {
-    document.getElementById('second').innerHTML = num;
-    num++;
-  } else {
-    console.log("function not working");
-  }
- }
-const increase = setInterval(lifeVal(), 10000);
+ // document.getElementById('second').innerHTML = num;
+//   if (num <= 10) {
+  //   } else {
+  setInterval(function() {
+ 
+     num++;
+
+     console.log(num);
+   }, 1000);
+
+let intervalFunc = setInterval(function() {
+  num++;
+  console.log(num);
+}, 1000);  
+
+clearInterval(intervalFunc);
+//  }
+//  lifeVal();
+
+ // const increase = setInterval(lifeVal(), 10000);
 
 // function nowWorking(){
 //     king.addEventListener("click", primePlay());
